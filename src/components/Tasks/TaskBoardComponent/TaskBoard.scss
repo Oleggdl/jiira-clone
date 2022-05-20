@@ -15,7 +15,7 @@
     background-color: $button-background-color;
 
     .task-component-settings {
-      opacity: 1;
+      background-color: #cecece;
     }
 
     .task-title {
@@ -65,10 +65,16 @@
   position: absolute;
   right: 10px;
   margin-left: 10px;
-  opacity: 0;
   transition: .3s;
   cursor: pointer;
   border-radius: 3px;
   background-color: $column-container-background;
   padding: 2px 5px;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .task-board-marks {
+    display: none;
+  }
 }

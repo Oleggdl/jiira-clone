@@ -68,12 +68,12 @@ const AuthContainer = (props) => {
     const registerHandler = async (values) => {
         try {
             if (values.passwordRepeat === values.password) {
-                const data = await request('https://test-heroku-jira.herokuapp.com/api/auth/signup', 'POST', {
+                const data = await request('https://jiira-clone.herokuapp.com/api/auth/signup', 'POST', {
                     name: values.name, surname: values.surname, email: values.email, username: values.username,
                     password: values.password
                 })
                 message(data.message)
-                const dataLogin = await request('https://test-heroku-jira.herokuapp.com/api/auth/signin', 'POST', {
+                const dataLogin = await request('https://jiira-clone.herokuapp.com/api/auth/signin', 'POST', {
                     name: '', surname: '', email: '', username: values.username, password: values.password
                 })
                 auth.login(dataLogin.token, dataLogin.id)
@@ -92,7 +92,7 @@ const AuthContainer = (props) => {
 
     const loginHandler = async (values) => {
         try {
-            const data = await request('https://test-heroku-jira.herokuapp.com/api/auth/signin', 'POST', {
+            const data = await request('https://jiira-clone.herokuapp.com/api/auth/signin', 'POST', {
                 name: '', surname: '', email: '', username: values.username, password: values.password
             })
             auth.login(data.token, data.id)
