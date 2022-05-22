@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jiira-clone/static/css/main.7649fc2e.css",
-    "main.js": "/jiira-clone/static/js/main.ec6be341.js",
+    "main.js": "/jiira-clone/static/js/main.df18e933.js",
     "index.html": "/jiira-clone/index.html",
     "static/media/getFetch.cjs": "/jiira-clone/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.7649fc2e.css.map": "/jiira-clone/static/css/main.7649fc2e.css.map",
-    "main.ec6be341.js.map": "/jiira-clone/static/js/main.ec6be341.js.map"
+    "main.df18e933.js.map": "/jiira-clone/static/js/main.df18e933.js.map"
   },
   "entrypoints": [
     "static/css/main.7649fc2e.css",
-    "static/js/main.ec6be341.js"
+    "static/js/main.df18e933.js"
   ]
 }
